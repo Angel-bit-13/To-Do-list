@@ -6,40 +6,14 @@
   <title>TO-DO LIST</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  .topnav {
-    overflow:hidden;
-    background-color:#f5c3d2;
-}
-
-.topnav a{
-    float:left;
-    color:#ec107e;
-    text-align: center;
-    padding:14px 16px;
-    text-decoration:dotted;
-    font-size: medium;
-
-}
-
-.topnav a:hover {
-    background-color: #f77c9096;
-    color:black;
-}
-
-.topnav a.active {
-    background-color: #ffffff;
-    color:rgb(240, 40, 90)
-}
-</style>
 <body>
   <div class="topnav">
     <a class="active" href="#home">HOME</a>
     <a href=#archive >ARCHIVED</a>
     <a href="#theme">THEME</a>
     <a href="#settings">SETTINGS</a>
-    
-</div>
+  </div>
+
   <div class="container">
     <div class="todo-app">
       <h2>To-do List</h2>
@@ -48,10 +22,24 @@
         <button onclick="addTask()">Add</button>
       </div>
       <ul id="list-container">
-        
       </ul>
     </div>
   </div>
+
+  <!-- Theme Modal -->
+  <div id="theme-modal" class="theme-modal">
+    <div class="theme-content">
+      <span class="close-button" onclick="toggleThemeModal()">&times;</span>
+      <h2>Choose a Theme</h2>
+      <div id="theme-options" class="theme-options">
+        <!-- Theme options will be generated here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="archive.js"></script>
+  <script src="settings.js"></script>
   <script src="script.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
