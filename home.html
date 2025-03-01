@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO LIST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .topnav {
+    overflow:hidden;
+    background-color:#f5c3d2;
+}
+
+.topnav a{
+    float:left;
+    color:#ec107e;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:dotted;
+    font-size: medium;
+
+}
+
+.topnav a:hover {
+    background-color: #f77c9096;
+    color:black;
+}
+
+.topnav a.active {
+    background-color: #ffffff;
+    color:rgb(240, 40, 90)
+}
+</style>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">HOME</a>
+    <a href="anime.html">ANIME</a>
+    <a href="#manga">MANGA</a>
+    <a href="#community">COMMUNITY</a>
+    
+</div>
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-do List</h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="list-container">
+        
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
