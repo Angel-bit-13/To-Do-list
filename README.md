@@ -1,3 +1,3 @@
 # To-Do-list
-#we can create our to do list here so that we won't forget any tasks!
-#add a new list and remove it if done!
+We can create our to do list here so that we won't forget any tasks!
+Add a new list and remove it if done!
